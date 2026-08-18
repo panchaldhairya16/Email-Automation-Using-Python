@@ -1,5 +1,5 @@
 <div align="center">
-# Email-Automation-Using-Python
+#Email-Automation-Using-Python
   
 **A beginner-friendly Python script that sends personalized holiday reminder emails via Gmail SMTP.**
 
