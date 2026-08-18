@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Email-Automation-Using-Python
 =======
 <div align="center">
