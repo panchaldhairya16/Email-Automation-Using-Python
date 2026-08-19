@@ -18,21 +18,23 @@
 
 | Feature | Description |
 | :--- | :--- |
-| 👥 **Personalized Outreach** | Dynamically inserts recipient name from `email.csv` |
-| 🎨 **Rich HTML & Fallback** | Professional responsive template with plain-text fallback |
-| 🖼️ **Inline Branding** | Embeds inline badges & logos with email-safe layout |
-| 🔒 **Secure Authentication** | SSL-encrypted SMTP connection using Gmail App Passwords |
-| 📦 **Zero Dependencies** | Built 100% on Python standard libraries (`smtplib`, `email`, `csv`) |
+| 👥 **Personalized Outreach** | Dynamically inserts recipient names from `email.csv` |
+| 🎨 **Rich Responsive HTML** | Professional mobile-responsive template with plain-text fallback |
+| 🖼️ **Inline Branding** | Embeds inline badges & logos with clean email-safe layout |
+| 🔒 **Environment Security** | Secure `.env` credential management via `python-dotenv` |
+| ⏱️ **Rate Limiting** | Configurable delay between dispatches to prevent spam flags |
+| 📊 **Delivery Logging & Summary** | Detailed audit logs (`delivery_log.txt`) and failed email export |
 
 ---
 
 ## 📁 Repository Structure
 
 ```text
+├── .env.example                 # Environment variable template
 ├── email.csv                    # Recipient list (Email, Name)
 ├── send_email.py                # Main automation & SMTP dispatch script
 ├── Gujarat Badge Template.png   # Inline attachment asset
-├── .gitignore                   # Ignore cache & sensitive files
+├── .gitignore                   # Ignore cache, logs & sensitive files
 └── README.md                    # Documentation
 ```
 
@@ -40,21 +42,27 @@
 
 ## 🚀 Quick Start
 
-### 1. Configure Recipients (`email.csv`)
-```csv
-Email,Name
-panchaldhairya2005@gmail.com,Dhairya
-shivjani2005@gmail.com,Shiv Jani
+### 1. Install Dependencies
+```bash
+pip install python-dotenv
 ```
 
-### 2. Configure Credentials (`send_email.py`)
-```python
-email_user = "your_email@gmail.com"
-password = "your_16_char_app_password"
+### 2. Configure Credentials (`.env`)
+Create a `.env` file from the `.env.example` template:
+```env
+EMAIL_USER=your_email@gmail.com
+EMAIL_PASSWORD="your_16_digit_app_password"
 ```
 > 💡 *Generate an App Password via **Google Account → Security → 2-Step Verification → App Passwords**.*
 
-### 3. Run Automation
+### 3. Configure Recipients (`email.csv`)
+```csv
+Email,Name
+recipient1@example.com,John Doe
+recipient2@example.com,Jane Smith
+```
+
+### 4. Run Automation
 ```bash
 python send_email.py
 ```
@@ -64,13 +72,13 @@ python send_email.py
 ## 🛡️ Security Best Practice
 
 - **Never** commit real passwords or `.env` files to GitHub.
-- Keep `__pycache__/` and sensitive credentials tracked in `.gitignore`.
+- Keep `__pycache__/`, logs, and `.env` credentials tracked in `.gitignore`.
 
 ---
 
 <div align="center">
 
-Made with ❤️ by **Shiv Jani** & **Dhairya Panchal**
+Made with ❤️ by [**Shiv Jani**](https://www.linkedin.com/in/shiv-jani/) & **Dhairya Panchal**
 
 ⭐ **Star this repository if you find it helpful!**
 

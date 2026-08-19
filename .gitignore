@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .env
 .DS_Store
+*.log
+delivery_log.txt
+failed_emails.csv
