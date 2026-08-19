@@ -175,12 +175,6 @@ Elastic User Group Gujarat | Organizing Team
       text-decoration: none;
       font-size: 13px;
     }}
-    .linkedin-link {{
-      color: #0077b5 !important;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 13px;
-    }}
     @media only screen and (max-width: 540px) {{
       body {{
         padding: 8px 4px !important;
@@ -251,17 +245,14 @@ Elastic User Group Gujarat | Organizing Team
           <td valign="middle" style="vertical-align: middle; padding-right: 12px;">
             <div style="border-left: 3px solid #00557f; padding-left: 12px;">
               <p style="margin: 0 0 4px 0; color: #718096; font-size: 13px;">Best regards,</p>
-              <p style="margin: 0 0 2px 0; font-size: 16px; font-weight: 700; color: #0f172a;">
-                <a href="https://www.linkedin.com/in/shiv-jani/" target="_blank" style="color: #00557f; text-decoration: none; border-bottom: 1.5px solid #00557f;">Shiv Jani</a>
+              <p style="margin: 0 0 3px 0; font-size: 16px; font-weight: 700; color: #0f172a;">
+                <a href="https://www.linkedin.com/in/shiv-jani/" target="_blank" style="color: #00557f; text-decoration: underline;">Shiv Jani</a>
               </p>
               <p style="margin: 0 0 6px 0; font-size: 13px; color: #4a5568;">
                 <strong>Elastic User Group Gujarat</strong> | Organizing Team
               </p>
-              <p style="margin: 0 0 6px 0; font-size: 13px; color: #4a5568;">
+              <p style="margin: 0; font-size: 13px; color: #4a5568;">
                 Contact: <a href="tel:+918160308850" class="contact-badge">+91 8160308850</a>
-              </p>
-              <p style="margin: 0; font-size: 13px;">
-                <a href="https://www.linkedin.com/in/shiv-jani/" target="_blank" class="linkedin-link">LinkedIn Profile &rarr;</a>
               </p>
             </div>
           </td>
