@@ -3,7 +3,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-email_user = "YOUR_MAIL_ADDR"
+email_user = "YOUR_EMAIL_ADDRESS"
 password = "YOUR_PASSWORD"
 subject = "Holiday Reminder"
 
