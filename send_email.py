@@ -3,8 +3,8 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-email_user = "panchaldhairya2005@gmail.com"
-password = "jkbq jcfm krth sltg"
+email_user = "YOUR_MAIL_ADDR"
+password = "YOUR_PASSWORD"
 subject = "Holiday Reminder"
 
 # Connect to Gmail SMTP server
